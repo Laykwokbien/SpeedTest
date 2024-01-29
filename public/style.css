@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root{
+    --first-color: #393E46;
+    --second-color: #5C636E;
+    --third-color: #F96D00;
+    --fourth-color: #F2F2F2;
+}
+
+*{
+    /* outline: green 1px solid; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body{
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+}
+header{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    height: 80px;
+    background-color: #F96D00;
+    margin-bottom: 1rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.messages{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+}
+
+.warning{
+    border-radius: 5px;
+    margin: 0 15%;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: red;
+    width: 20%;
+}
+
+form{
+    margin-right: 5rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, select{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:disabled{
+    cursor: default;
+    color: black;
+}
+
+
+thead, th{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+tbody, td{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+}
+
+.nav-brand{
+    font-size: 2rem;
+}
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+.align-items-center{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    color: var(--fourth-color);
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    margin: 0 15%;
+}
+
+.unique{
+    margin-top: 8rem;
+}
+
+.deletebtn{
+    width: 5rem;
+}
+
+.selectionbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.delete{
+    background-color: var(--second-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+.primary{
+    background-color: #3366FF;
+}
+.danger{
+    background-color: #dc3545;
+}
+.success{
+    background-color: #198754;
+}
+
+.index{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.selectbtn{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:858px){
+    .warning{
+        width: 50%;
+    }
+    .container{
+        margin: 0 15px;
+    }
+    .unique{
+        margin-top: 5rem;
+    }
+    form{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:528px){
+    form{
+        width: 50%;
+    }
+} 
