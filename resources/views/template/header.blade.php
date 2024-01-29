@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="nav-brand">Grade o'Trains</div>
+            <div class="nav-brand">Grading Lot Trains</div>
             <div class="nav-list">
                 <div class="nav-item">
                     <a href="/" class="nav-link">Home</a>
